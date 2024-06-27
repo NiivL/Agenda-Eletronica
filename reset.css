@@ -1,3 +1,11 @@
+:root{
+
+    --cor-primaria: rgba(0, 0, 0, 0.9);
+    --cor-secundaria:  #1433c2 ;
+    --main-bg-color: linear-gradient(94deg, rgba(1,29,73,1) 66%, rgba(5,29,142,1) 100%);
+    
+    }
+
 *{
     margin: 0;
 	padding: 0;
