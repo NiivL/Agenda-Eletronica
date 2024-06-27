@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <div>
-        <h1>Bem vindo</h1>
-        <h3>Acesse sua conta agora</h3>
-        <a href="#">Entrar</a>
+    <div class="content">
+        <h1>Faça seu login</h1>
+        <p>Usuário</p>
+        <input id=usuario type="text" placeholder="Usuário">
+        <p>Senha</p>
+        <input id="senha" type="password" placeholder="Senha">
+        <button>Entrar</button>
+        <a href="#">Criar conta</a>
 
     </div>
     
