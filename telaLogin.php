@@ -14,13 +14,15 @@
     <div class="content">
         <h1>Faça seu login</h1>
         <p>Usuário</p>
-        <input id=usuario type="text" placeholder="Usuário">
+        <input id=usuarioCadastrado type="text" placeholder="Usuário">
         <p>Senha</p>
-        <input id="senha" type="password" placeholder="Senha">
-        <button>Entrar</button>
+        <input id="senhaCadastrada" type="password" placeholder="Senha">
+        <button class="btn-entrar" onclick="addEntrada()">Entrar</button>
         <a href="./telacadastro.php">Criar conta</a>
 
     </div>
+
+    <script src="./telalogin.js"></script>
     
 </body>
 </html>

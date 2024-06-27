@@ -20,8 +20,10 @@
             <input id="senha" type="password" placeholder="Senha">
         </i>
         
-        <button>Cadastrar</button>
+        <button onclick="addEntrada()">Cadastrar</button>
 
     </div>
+
+  <script src="./telacadastro.js"></script>
 </body>
 </html>

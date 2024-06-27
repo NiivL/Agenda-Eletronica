@@ -1,54 +1,62 @@
-:root{
+:root {
 
     --cor-primaria: rgba(0, 0, 0, 0.9);
-    --cor-secundaria:  #1433c2 ;
-    --main-bg-color: linear-gradient(94deg, rgba(1,29,73,1) 66%, rgba(5,29,142,1) 100%);
-    
-    }
+    --cor-secundaria: #1433c2;
+    --main-bg-color: linear-gradient(94deg, rgba(1, 29, 73, 1) 66%, rgba(5, 29, 142, 1) 100%);
 
-body{
-        background: var(--main-bg-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+}
 
-div{
-        background-color: var(--cor-primaria);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        width: 500px;
-        height: 300px;
-    }
+body {
+    background: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-h1{
-        color: white;
+div {
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+    height: 300px;
+}
 
-    }
-
-input{
-        background-color:  rgba(0, 0, 0, 0.9);
-        color: white;
-        width: 150px;
-        padding: 5px;
-        border: 2px solid var(--cor-secundaria);
-        border-radius: 10px;
-    }
-
-button{
-    margin-left: 20px;
-        width: 165px;
-        padding: 5px;
-        border: blue;
-        border-radius: 10px;
-        color: white;
-        background-color: #1433c2;
-    }
-i{
+h1 {
     color: white;
-    }
+
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 150px;
+    padding: 5px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+button {
+    margin-left: 20px;
+    width: 165px;
+    padding: 5px;
+    border: blue;
+    border-radius: 10px;
+    color: white;
+    background-color: #1433c2;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+i {
+    color: white;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}

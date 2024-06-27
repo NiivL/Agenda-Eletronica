@@ -54,9 +54,20 @@ button{
     border-radius: 10px;
     color: white;
     background-color: #1433c2;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 a{
     color: #1433c2;
     text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
 }
