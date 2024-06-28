@@ -13,7 +13,7 @@
 <div class="content">
         <h1>Cria sua conta</h1>
         <i class="fa-regular fa-user">
-            <input id="usuario" type="password" placeholder="Escolha um nome de usuário">
+            <input id="usuario" type="text" placeholder="Escolha um nome de usuário">
         </i>
         
         <i class="fa-solid fa-lock">

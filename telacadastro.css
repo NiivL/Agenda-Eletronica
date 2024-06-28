@@ -1,11 +1,3 @@
-:root {
-
-    --cor-primaria: rgba(0, 0, 0, 0.9);
-    --cor-secundaria: #1433c2;
-    --main-bg-color: linear-gradient(94deg, rgba(1, 29, 73, 1) 66%, rgba(5, 29, 142, 1) 100%);
-
-}
-
 body {
     background: var(--main-bg-color);
     display: flex;
@@ -32,9 +24,9 @@ h1 {
 }
 
 input {
-    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    background-color: var(--cor-primaria);
     color: white;
-    width: 150px;
     padding: 5px;
     border: 2px solid var(--cor-secundaria);
     border-radius: 10px;
