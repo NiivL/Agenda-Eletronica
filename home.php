@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="calendario.css">
 </head>
 
 <body>
@@ -52,7 +53,27 @@
 
     </nav>
 
+    <div class="content-calendario">
+        <div class="days-week">
+            <span>Segunda</span>
+            <span>Terça</span>
+            <span>Quarta</span>
+            <span>Quinta</span>
+            <span>Sexta</span>
+            <span>Sábado</span>
+            <span>Domingo</span>
+        </div>
+
+        <div class="number-days">
+            <span class="mes-anterior">30</span>
+            <span class="mes-anterior">31</span>
+        </div>
+    </div>
+
+
+    
     <script src="./home.js"></script>
+    <script src="./calendario.js"></script>
 </body>
 
 </html>
