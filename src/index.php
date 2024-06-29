@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="telaLogin.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../styles/telaLogin.css">
+    <link rel="stylesheet" href="../styles/reset.css">
 </head>
 
 <body>
