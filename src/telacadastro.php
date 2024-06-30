@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt=br">
 <head>
@@ -10,7 +12,8 @@
 
 </head>
 <body>
-<form class="content" action="cria_usuario.php" method="POST">
+
+<form class="content" action="databaseconnect.php" method="POST">
         <h1>Cria sua conta</h1>
         <i class="fa-regular fa-user">
             <input id="usuario" type="text" name="usuario" placeholder="Escolha um nome de usuário">
