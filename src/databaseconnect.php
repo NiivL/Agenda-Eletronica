@@ -11,7 +11,7 @@ $password);
     $sql = "INSERT INTO pessoas SET user='$user', password='$senha'";
     $sql = $conn->query($sql);
 
-    echo "Cadastrado com sucesso!";
+    header("Location: home.php");
 
     // echo "Conectado a $dbname em $host com sucesso.";
 } catch (PDOException $pe) {

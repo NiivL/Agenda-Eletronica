@@ -1,8 +1,3 @@
-<?php 
-
-include("databaseconnect.php");
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
