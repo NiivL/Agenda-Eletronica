@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/calendario.css">
+    <link rel="stylesheet" href="../styles/crud.css">
 </head>
 
 <body>
@@ -52,26 +53,45 @@
         </ul>
 
     </nav>
+    <div class="content">
+        <div class="content-calendario">
+            <div class="days-week">
+                <span>Segunda</span>
+                <span>Terça</span>
+                <span>Quarta</span>
+                <span>Quinta</span>
+                <span>Sexta</span>
+                <span>Sábado</span>
+                <span>Domingo</span>
+            </div>
 
-    <div class="content-calendario">
-        <div class="days-week">
-            <span>Segunda</span>
-            <span>Terça</span>
-            <span>Quarta</span>
-            <span>Quinta</span>
-            <span>Sexta</span>
-            <span>Sábado</span>
-            <span>Domingo</span>
+            <div class="number-days">
+                <span class="mes-anterior">30</span>
+                <span class="mes-anterior">31</span>
+            </div>
         </div>
 
-        <div class="number-days">
-            <span class="mes-anterior">30</span>
-            <span class="mes-anterior">31</span>
+        <div class="btn-crud">
+            <li class="btn-list">
+                <ul class="btn-add">
+                    <i class="bi bi-file-earmark-plus"></i>
+                    <button>Adicionar tarefas</button>
+                </ul>
+
+                <ul class="btn-delete">
+                    <i class="bi bi-trash"></i>
+                    <button>Remover tarefas</button>
+                </ul>
+                <ul class="btn-edit">
+                    <i class="bi bi-pencil-fill"></i>
+                    <button>Editar tarefas</button>
+                </ul>
+            </li>
         </div>
     </div>
 
 
-    
+
     <script src="./home.js"></script>
     <script src="./calendario.js"></script>
 </body>

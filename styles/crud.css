@@ -1,0 +1,40 @@
+div.btn-crud{
+    
+    width: 700px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li.btn-list{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+li.btn-list ul button{
+    width: 140px;
+    padding: 5px;
+    border: blue;
+    border-radius: 10px;
+    color: white;
+    background-color: #1433c2;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+li.btn-list i{
+    color: black;
+}
+
+li ul button:hover{
+    color: white;
+    background-color: black;
+}

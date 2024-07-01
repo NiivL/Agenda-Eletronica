@@ -19,8 +19,6 @@
             <p>Senha</p>
             <input id="senhaCadastrada" type="password" placeholder="Senha" name="senha">
             <button type="submit" value="Entrar" class="btn-entrar" onclick="addEntrada()">Entrar</button>
-            <a href="">
-            </a>
             <a href="./telacadastro.php">Criar conta</a>
 
         </div>
