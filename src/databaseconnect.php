@@ -6,24 +6,25 @@ try {
         $username,
         $password
     );
-
-    // $id = $_POST["campo1"];
-    $user = $_POST["usuario"];
-    $senha = $_POST["senha"];
+    
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-    if ($user == '' || $senha == '') {
+    $txt_user = $_POST["txt_usuario"];
+    $txt_senha = $_POST["txt_senha"];
+
+
+    if ($txt_user == '' || $txt_senha == '') {
         echo "<script type='javascript'>alert('Por favor preencha todos os dados!');";
         header("Location: telacadastro.php");
 
     } else {
-        $sql = "INSERT INTO pessoas SET user='$user', password='$senha'";
+        $sql = "INSERT INTO pessoas SET user='$txt_user', password='$txt_senha'";
         $sql = $conn->query($sql);
 
         header("Location: home.php");
     }
 
-    // echo "Conectado a $dbname em $host com sucesso.";
 } catch (PDOException $pe) {
     echo "Erro: " . $pe->getMessage();
 }

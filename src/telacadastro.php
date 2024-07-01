@@ -16,11 +16,11 @@
 <form class="content" action="databaseconnect.php" method="POST">
         <h1>Cria sua conta</h1>
         <i class="fa-regular fa-user">
-            <input id="usuario" type="text" name="usuario" placeholder="Escolha um nome de usuário">
+            <input id="usuario" type="text" name="txt_usuario" placeholder="Escolha um nome de usuário">
         </i>
         
         <i class="fa-solid fa-lock">
-            <input id="senha" type="password" name="senha" placeholder="Senha">
+            <input id="senha" type="password" name="txt_senha" placeholder="Senha">
         </i>
         
         <input type="submit" value="Enviar" class="btn-cadastrar" onclick="addEntrada()"></input>

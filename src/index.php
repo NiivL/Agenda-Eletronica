@@ -11,17 +11,20 @@
 </head>
 
 <body>
-    <div class="content">
-        <h1>Faça seu login</h1>
-        <p>Usuário</p>
-        <input id=usuarioCadastrado type="text" placeholder="Usuário">
-        <p>Senha</p>
-        <input id="senhaCadastrada" type="password" placeholder="Senha">
-        <a href="./home.php">
-            <button class="btn-entrar" onclick="addEntrada()">Entrar</button></a>
-        <a href="./telacadastro.php">Criar conta</a>
+    <form action="login.php" method="POST">
+        <div class="content">
+            <h1>Faça seu login</h1>
+            <p>Usuário</p>
+            <input id=usuarioCadastrado type="text" placeholder="Usuário" name="usuario">
+            <p>Senha</p>
+            <input id="senhaCadastrada" type="password" placeholder="Senha" name="senha">
+            <button type="submit" value="Entrar" class="btn-entrar" onclick="addEntrada()">Entrar</button>
+            <a href="">
+            </a>
+            <a href="./telacadastro.php">Criar conta</a>
 
-    </div>
+        </div>
+    </form>
 
     <script src="./telalogin.js"></script>
 
