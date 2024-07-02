@@ -196,8 +196,8 @@
                 </ul>
                 <ul class="btn-edit">
                     <i class="bi bi-pencil-fill"></i>
-                    <button onclick="fetchAssuntos()">Mostrar Tarefas</button>
-                    </ul>
+                    <button onclick="fetchAssuntos('result-box')">Mostrar Tarefas</button>
+                </ul>
             </li>
         </div>
 
@@ -208,12 +208,26 @@
                     <input type="text" id="subject" name="subject" required>
                 </div>
                 <div class="form-group">
-                    <label for="start-time">Hora de Início</label>
-                    <input type="time" id="start-date" name="start-time" required>
+                    <label for="start-date">Data de Início</label>
+                    <input type="date" id="start-date" name="start-date" required>
                 </div>
                 <div class="form-group">
-                    <label for="end-time">Hora do Final</label>
+                    <label for="start-time">Hora de Início</label>
+                    <input type="time" id="start-time" name="start-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-date">Data do Final</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-time">Data do Final</label>
                     <input type="time" id="end-time" name="end-time" required>
+                </div>
+                <div class="form-group">
+                    <select name="select-tatus" id="select-status">
+                        <option value="Pendente" selected>Pendente</option>
+                        <option value="Finalizado">Finalizado</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="description">Descrição</label>
@@ -226,7 +240,7 @@
             </form>
         </div>
 
-        <div class="info-atividade">
+        <div class="info-atividade" id="result-box" hidden>
             <div id="result"></div>
         </div>
 
