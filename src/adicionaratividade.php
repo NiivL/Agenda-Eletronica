@@ -20,13 +20,13 @@ try {
         
     }else {
         $sql = "INSERT INTO atividades SET atividade_desc='$descricao', assunto='$assunto', data_inicio='$hora_inicio', data_fim='$hora_fim'";
-        // $sql = "INSERT INTO pessoas SET user='$txt_user', password='$txt_senha'";
 
         $sql = $conn->query($sql);
-        echo "inserido com sucesso";
+        echo "<script>mostrarAlerta('Dados carregados com sucesso!');</script>";
+        
+        header("Location: home.php");
 
-        // header("Location: home.php");
-
+        
     }
 
 

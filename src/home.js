@@ -18,3 +18,4 @@ var menuSide = document.querySelector('.menuLateral');
 btnExpandir.addEventListener('click', function () {
     menuSide.classList.toggle('expandir')
 });
+

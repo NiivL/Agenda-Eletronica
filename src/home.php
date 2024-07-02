@@ -70,9 +70,104 @@
 
             <div class="number-days">
                 <span class="mes-anterior">30
-                    <button onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-add" onclick="Mudarestado('div_form')">+</button>
                 </span>
-                <span class="mes-anterior">31</span>
+                <span class="mes-anterior">31
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>01
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>02
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>03
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>04
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>05
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>06
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>07
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>08
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>09
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span>10
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >11
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >12
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >13
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >14
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >15
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >16
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >17
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >18
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >19
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >20
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >21
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >22
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >23
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >24
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >25
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >26
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >27
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >28
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >29
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >30
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
+                <span >31
+                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                </span>
             </div>
         </div>
 
@@ -126,14 +221,13 @@
     </div>
 
 
-    </div>
 
 
 
 
     <script src="formularioAtividade.js"></script>
     <script src="./home.js"></script>
-    <script src="./calendario.js"></script>
+    <!-- <script src="./calendario.js"></script> -->
 </body>
 
 </html>
