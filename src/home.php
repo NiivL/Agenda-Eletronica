@@ -54,6 +54,8 @@
         </ul>
 
     </nav>
+
+
     <div class="content">
         <div class="content-calendario">
             <div class="days-week">
@@ -67,10 +69,14 @@
             </div>
 
             <div class="number-days">
-                <span class="mes-anterior">30</span>
+                <span class="mes-anterior">30
+                    <button onclick="Mudarestado('div_form')">+</button>
+                </span>
                 <span class="mes-anterior">31</span>
             </div>
         </div>
+
+
 
         <div class="btn-crud">
 
@@ -81,8 +87,10 @@
                 </ul>
 
                 <ul class="btn-delete">
+                    <form action="removerlinha.php" method="POST">
                     <i class="bi bi-trash"></i>
                     <button>Remover tarefas</button>
+                    </form>
                 </ul>
                 <ul class="btn-edit">
                     <i class="bi bi-pencil-fill"></i>
@@ -92,21 +100,21 @@
         </div>
 
         <div class="form-container" id="div_form" hidden>
-            <form action="connHome.php" method="POST">
+            <form action="adicionaratividade.php" method="POST">
                 <div class="form-group">
-                    <!-- <label for="subject">Assunto</label> -->
+                    <label for="subject">Assunto</label>
                     <input type="text" id="subject" name="subject" required>
                 </div>
                 <div class="form-group">
-                    <!-- <label for="start-time">Hora de Início</label> -->
+                    <label for="start-time">Hora de Início</label>
                     <input type="time" id="start-date" name="start-time" required>
                 </div>
                 <div class="form-group">
-                    <!-- <label for="end-time">Hora do Final</label> -->
+                    <label for="end-time">Hora do Final</label>
                     <input type="time" id="end-time" name="end-time" required>
                 </div>
                 <div class="form-group">
-                    <!-- <label for="description">Descrição</label> -->
+                    <label for="description">Descrição</label>
                     <textarea id="description" name="descricao" rows="4" required></textarea>
                 </div>
                 <div class="form-actions">

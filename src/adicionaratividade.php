@@ -11,14 +11,16 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $descricao = $_POST["descricao"];
-    // $select_id = "SELECT "
-
+    $assunto = $_POST["subject"];
+    $hora_inicio = $_POST["start-time"];
+    $hora_fim = $_POST["end-time"];
     
     if ($descricao == '') {
         echo "Por favor coloque uma descrição.";
         
     }else {
-        $sql = "INSERT INTO atividades SET atividade_desc='$descricao'";
+        $sql = "INSERT INTO atividades SET atividade_desc='$descricao', assunto='$assunto', data_inicio='$hora_inicio', data_fim='$hora_fim'";
+        // $sql = "INSERT INTO pessoas SET user='$txt_user', password='$txt_senha'";
 
         $sql = $conn->query($sql);
         echo "inserido com sucesso";
