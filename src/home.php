@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../styles/calendario.css">
     <link rel="stylesheet" href="../styles/crud.css">
     <link rel="stylesheet" href="../styles/formularioatividade.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -73,100 +75,101 @@
                     <button class="btn-add" onclick="Mudarestado('div_form')">+</button>
                 </span>
                 <span class="mes-anterior">31
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button>
                 </span>
                 <span>01
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>02
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>03
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>04
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>05
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>06
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>07
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>08
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>09
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
                 <span>10
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >11
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>11
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >12
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>12
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >13
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>13
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >14
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>14
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >15
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>15
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >16
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>16
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >17
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>17
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >18
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>18
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >19
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>19
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >20
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>20
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >21
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>21
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >22
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>22
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >23
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>23
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >24
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>24
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >25
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>25
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >26
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>26
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >27
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>27
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >28
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>28
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >29
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>29
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >30
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>30
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
-                <span >31
-                    <button class="btn-showform" onclick="Mudarestado('div_form')">+</button>
+                <span>31
+                    <button class="btn-showform" onclick="Mudarestado('div_form')"><i class="bi bi-file-earmark-plus"></i></button><button class="btn-showform" onclick="fetchAssuntos()"><i class="bi bi-book"></i></i></button>
                 </span>
             </div>
         </div>
@@ -183,14 +186,18 @@
 
                 <ul class="btn-delete">
                     <form action="removerlinha.php" method="POST">
-                    <i class="bi bi-trash"></i>
-                    <button>Remover tarefas</button>
+                        <i class="bi bi-trash"></i>
+                        <button>Remover tarefas</button>
                     </form>
                 </ul>
                 <ul class="btn-edit">
                     <i class="bi bi-pencil-fill"></i>
                     <button>Editar tarefas</button>
                 </ul>
+                <ul class="btn-edit">
+                    <i class="bi bi-pencil-fill"></i>
+                    <button onclick="fetchAssuntos()">Mostrar Tarefas</button>
+                    </ul>
             </li>
         </div>
 
@@ -218,7 +225,15 @@
                 </div>
             </form>
         </div>
+
+        <div class="info-atividade">
+            <div id="result"></div>
+        </div>
+
     </div>
+
+
+
 
 
 
@@ -228,6 +243,7 @@
     <script src="formularioAtividade.js"></script>
     <script src="./home.js"></script>
     <!-- <script src="./calendario.js"></script> -->
+    <script src="./mostrarassuntos.js"></script>
 </body>
 
 </html>
