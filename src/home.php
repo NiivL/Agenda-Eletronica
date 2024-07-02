@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/calendario.css">
     <link rel="stylesheet" href="../styles/crud.css">
+    <link rel="stylesheet" href="../styles/formularioatividade.css">
 </head>
 
 <body>
@@ -72,10 +73,11 @@
         </div>
 
         <div class="btn-crud">
+
             <li class="btn-list">
                 <ul class="btn-add">
                     <i class="bi bi-file-earmark-plus"></i>
-                    <button>Adicionar tarefas</button>
+                    <button onclick="Mudarestado('div_form')">Adicionar tarefas</button>
                 </ul>
 
                 <ul class="btn-delete">
@@ -88,10 +90,40 @@
                 </ul>
             </li>
         </div>
+
+        <div class="form-container" id="div_form" hidden>
+            <form action="connHome.php" method="POST">
+                <div class="form-group">
+                    <!-- <label for="subject">Assunto</label> -->
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="start-time">Hora de Início</label> -->
+                    <input type="time" id="start-date" name="start-time" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="end-time">Hora do Final</label> -->
+                    <input type="time" id="end-time" name="end-time" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="description">Descrição</label> -->
+                    <textarea id="description" name="descricao" rows="4" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-save">Salvar</button>
+                    <button type="button" class="btn-cancel" onclick="window.location.reload();">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     </div>
 
 
 
+
+    <script src="formularioAtividade.js"></script>
     <script src="./home.js"></script>
     <script src="./calendario.js"></script>
 </body>
