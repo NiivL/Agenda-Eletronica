@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         
         if ($conn->query($sql) === TRUE) {
-            echo "Última linha removida com sucesso!";
+            header("Location: home.php");
         } else {
             echo "Erro ao remover a última linha: " . $conn->error;
         }

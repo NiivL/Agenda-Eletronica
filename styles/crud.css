@@ -41,4 +41,16 @@ li ul button:hover{
 
 div.info-atividade{
     min-height: 150px;
+    z-index: 1;
+    position: fixed;
+    top: 30%;
+    background-color: black;
+    color: white;
+    
+    border-radius: 8px
+
+}
+
+table {
+    border-radius: 8px;
 }
