@@ -1,0 +1,16 @@
+{
+    "name": "niv/calendar",
+    "description": "calendario agenda de eventos com php",
+    "authors": [
+        {
+            "name": "Nivaldo Lopes"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": { 
+            "Classes\\": "../../class",
+            "Models\\": "../../model"
+        }
+    }
+}

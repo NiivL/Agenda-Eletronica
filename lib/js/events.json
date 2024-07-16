@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "title": "The Title",
+        "start": "2024-07-11",
+        "end": "2024-07-12",
+        "color": "red"
+    },
+    {
+        "id": 2,
+        "title": "The Title",
+        "start": "2024-07-15",
+        "end": "2024-07-16",
+        "color": "green"
+    },
+    {
+        "id": 3,
+        "title": "Teste",
+        "start": "2024-07-01",
+        "end": "2024-07-03",
+        "textColor": "red",
+        "color": "black"
+    }
+]

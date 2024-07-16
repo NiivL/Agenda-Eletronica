@@ -1,0 +1,62 @@
+/* .divForm{
+    display: none;
+} */
+
+.formAdd{
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    gap: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 40%;
+}
+
+.formEdit{
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    gap: 0px;
+}
+
+.formDel{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 40%;
+    align-items: center;
+    flex-direction: row-reverse
+}
+
+.formAdd input{
+    background-color: #fff;
+    color: black;
+
+}
+
+div.btn_AddEDelete{
+    display: flex;
+}
+
+button.btn-showform{
+    height: 50px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+button.btn-showform:hover{
+    background-color: #1a252f;
+}
+

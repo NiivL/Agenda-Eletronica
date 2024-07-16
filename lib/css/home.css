@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menuLateral{
+    width: 80px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);  
+    padding: 40px 0 40px 1%; 
+    box-shadow: 3px 0 0 #1433c2;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+nav.menuLateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+div.number-days{
+    display: flex;
+    
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #1433c2
+}
+
+ul li.item-menu:hover{
+    background-color: #1433c2;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+
+}
+
+nav.menuLateral.expandir .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+/* Novo código */
+
+
+form.formEdit input{
+    border: 2px solid #1433c2;
+    padding: 15px;
+}
+
+.calendarUser button.fc-button-primary, .calendarManager button.fc-button-primary{
+    color: #fff;
+    color: var(#1433c2, #fff);
+    background-color:#1433c2;
+}
