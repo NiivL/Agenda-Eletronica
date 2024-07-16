@@ -9,7 +9,9 @@ class ClassEvents extends ModelConect
     #Trazer dados de eventos de banco
     public function getEvents()
     {
-        $b = $this->conectDB()->prepare("select * from events");
+
+        $id_user_atividades = (int)$_SESSION['id_user'];
+        $b = $this->conectDB()->prepare("select * from events where id=$id_user_atividades");
         $b->execute();
         $f = $b->fetchAll(\PDO::FETCH_ASSOC);
         return json_encode($f);
