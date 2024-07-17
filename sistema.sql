@@ -31,7 +31,7 @@ INSERT INTO `user` (`id_user`, `name_user`,`name`, `password`) VALUES
 
 
 ALTER TABLE `events`
-  ADD PRIMARY KEY (`id_atividade`);
+  ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
@@ -45,12 +45,12 @@ ALTER TABLE `user`
 
 
 ALTER TABLE `events`
-  MODIFY `id_atividade` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 
 
 ALTER TABLE `events`
-  ADD CONSTRAINT `fk_user_events` FOREIGN KEY (`id`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk_user_events` FOREIGN KEY (`id_atividade`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 

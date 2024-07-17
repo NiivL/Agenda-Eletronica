@@ -1,5 +1,4 @@
 <?php
-
 require_once('../login/verificarLogin.php');
 include("../../config/config.php"); ?>
 
@@ -10,8 +9,6 @@ $date = new \DateTime($events['start']);
 
 ?> -->
 <?php include(DIRREQ . "Calendario/lib/html/header.php") ?>
-
-
 <nav class="menuLateral">
     <div class="btn-expandir">
         <i class="bi bi-list-task" id="btn-expandir"></i>
@@ -70,11 +67,11 @@ $date = new \DateTime($events['start']);
 
 <div id="divForm" style="display: none;">
     <form class="formAdd" method="POST" name="formAdd" id="formAdd" action="<?php echo DIRPAGE . '/Calendario/controllers/ControllerAdd.php'; ?>">
-        <input type="hidden" name="id" id="id" value="<?php echo $_SESSION['id_user']; ?>"><br>
+        <input type="hidden" name="id_atividade" id="id_atividade" value="<?php echo $_SESSION['id_user']; ?>"><br>
         Data: <input type="date" name="date" id="date" value="<?php echo $date->format("Y-m-d"); ?>"><br>
         Hora: <input type="time" name="time" id="time" value="<?php echo $date->format("H:i"); ?>"><br>
-        Nome: <input type="text" name="title" id="title"><br>
-        Atividade: <input type="text" name="description" id="description"><br>
+        Atividade: <input type="text" name="title" id="title"><br>
+        Descrição: <input type="text" name="description" id="description"><br>
 
         Quanto tempo para finalizar a atividade? <select name="horasAtendimento" id="horasAtendimento">
             <option value="">Selecione</option>

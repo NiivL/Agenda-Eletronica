@@ -9,12 +9,14 @@ class ClassEvents extends ModelConect
     #Trazer dados de eventos de banco
     public function getEvents()
     {
-
-        $id_user_atividades = (int)$_SESSION['id_user'];
-        $b = $this->conectDB()->prepare("select * from events where id=$id_user_atividades");
+        session_start();
+        $id_usuario = $_SESSION['id_user'];
+        $b = $this->conectDB()->prepare("select * from events where id_atividade=$id_usuario");
         $b->execute();
         $f = $b->fetchAll(\PDO::FETCH_ASSOC);
-        return json_encode($f);
+    
+        return json_encode($f, true);
+
     }
 
     #Criação da consulta no banco
@@ -52,6 +54,8 @@ class ClassEvents extends ModelConect
         $b->bindParam(3, $start, \PDO::PARAM_STR);
         $b->bindParam(4, $id, \PDO::PARAM_INT);
         $b->execute();
+
+        header("Location: /Calendario/views/user/index.php");
     }
 
     #Deletar do banco de dados
@@ -61,6 +65,8 @@ class ClassEvents extends ModelConect
         $b = $this->conectDB()->prepare("delete from events where id=?");
         $b->bindParam(1, $id, \PDO::PARAM_INT);
         $b->execute();
+
+        header("Location: /Calendario/views/user/index.php");
     }
 
     // Atualização de data e hora pelo arraste
@@ -121,5 +127,23 @@ class ClassEvents extends ModelConect
         }
     }
 
+    // public function getEventsByIdAtividade()
+    // {
+    //     session_start();
+    //     $id_atividade = $_SESSION['id_atividade'];
+    //     $b = $this->conectDB()->prepare("delete from events where id_atividade=$id_atividade");
+    //     $b->execute();
+    //     $f = $b->fetchAll(\PDO::FETCH_ASSOC);
 
+
+    
+    //     return json_encode($f, true);
+        
+    // }
+    
+    
 }
+
+// $b = $this->conectDB()->prepare("delete from events where id_atividade=$id_atividade");
+// $b->bindParam(1, $id, \PDO::PARAM_INT);
+// $b->execute();
