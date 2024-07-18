@@ -1,0 +1,119 @@
+/* Página de editar ou excluir atividade */
+
+div.container{
+    background-image: url(https://triibo.com.br/wp-content/uploads/2023/03/Background-roxo-1536x768.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+div.contentEdit {
+    background-color: #fff;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 60%;
+    grid-template-areas:
+        'caderno main'
+}
+
+.gif-caderno {
+    max-width: 300px;
+    grid-area: caderno;
+}
+
+.img-caderno {
+    max-width: 300px;
+}
+
+.formEdit {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    gap: 5px;
+}
+
+h1.txtEdit {
+    color: #000;
+    text-align: center;
+}
+
+h1 span {
+    color: blueviolet;
+}
+
+.formDel {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    grid-area: main;
+}
+
+.bi-trash {
+    font-size: 28px;
+    color: blueviolet;
+}
+
+form.formEdit input {
+    border: 0px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form.formEdit input:last-child{
+    background-color: blueviolet;
+}
+
+.inputEdit {
+    color: #000;
+    background-color: #fff;
+    border-radius: 30px
+}
+
+textarea.inputEdit {
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    max-width: 220px;
+}
+
+.btnAlterarDados {
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btnAlterarDados:hover {
+    background-color: #1433c2;
+    /* color: ; */
+}
+
+
+
+
+
+/* Calendário */
+
+.calendarUser button.fc-button-primary,
+.calendarManager button.fc-button-primary {
+    color: #fff;
+    /* color: var(#1433c2, #fff); */
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.fc-col-header-cell-cushion{
+    color: #000;
+}
+
+.fc-daygrid-day-number{
+    color: #000;
+}

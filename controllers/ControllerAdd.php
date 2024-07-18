@@ -11,6 +11,16 @@ $start=new \DateTime($date.' '.$time, new \DateTimeZone('America/Sao_Paulo'));
 $id_atividade=filter_input(INPUT_POST,'id_atividade',FILTER_DEFAULT);
 
 
+
+if ($horasAtendimento == "") {
+    header("Location: /Calendario/views/user/index.php");
+}else if($title == ""){
+    header("Location: /Calendario/views/user/index.php");
+}
+else if($description == ""){
+    header("Location: /Calendario/views/user/index.php");
+}
+
 $objEvents->createEvent(
     0,
     $title,

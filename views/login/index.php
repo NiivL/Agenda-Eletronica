@@ -5,7 +5,7 @@
     <?php include(DIRREQ . "Calendario/lib/html/header.php") ?>
 
     <div class="body-login">
-        < <form method="POST" action="<?php echo DIRPAGE . 'Calendario/controllers/ControllerConsultUser.php'; ?>">
+        <form method="POST" action="<?php echo DIRPAGE . 'Calendario/controllers/ControllerConsultUser.php'; ?>">
             <div class="content">
                 <h1>Faça seu login</h1>
                 <p>Usuário</p>

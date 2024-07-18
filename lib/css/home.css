@@ -14,7 +14,7 @@ nav.menuLateral{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);  
     padding: 40px 0 40px 1%; 
-    box-shadow: 3px 0 0 #1433c2;
+    box-shadow: 3px 0 0 blueviolet;
 
     position: fixed;
     top: 0;
@@ -55,11 +55,11 @@ ul li.item-menu{
 }
 
 ul li.ativo{
-    background-color: #1433c2
+    background-color: blueviolet;
 }
 
 ul li.item-menu:hover{
-    background-color: #1433c2;
+    background-color: blueviolet;
 }
 
 ul li.item-menu a{
@@ -88,16 +88,3 @@ ul li.item-menu a .icon > i{
 
 }
 
-/* Novo código */
-
-
-form.formEdit input{
-    border: 2px solid #1433c2;
-    padding: 15px;
-}
-
-.calendarUser button.fc-button-primary, .calendarManager button.fc-button-primary{
-    color: #fff;
-    color: var(#1433c2, #fff);
-    background-color:#1433c2;
-}
