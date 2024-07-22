@@ -86,10 +86,13 @@ class ClassEvents extends ModelConect
         $b->bindParam(2, $name_user, \PDO::PARAM_STR);
         $b->bindParam(3, $name, \PDO::PARAM_STR);
         $b->bindParam(4, $password, \PDO::PARAM_INT);
+
+        if ($password === "" || $name_user === "" || $name === "") {
+            header('Location: /Calendario/views/cadastro/index.php');
+
+            exit;
+        }
         $b->execute();
-
-
-
         header('Location: /Calendario/views/user/index.php');
     }
 
