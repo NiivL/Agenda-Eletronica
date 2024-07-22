@@ -45,7 +45,6 @@ class ClassEvents extends ModelConect
     }
 
     #Update no banco de dados
-
     public function updateEvent($id, $title, $description, $start)
     {
         $b = $this->conectDB()->prepare("update events set title=?, description=?, start=? where id=?");
@@ -59,7 +58,6 @@ class ClassEvents extends ModelConect
     }
 
     #Deletar do banco de dados
-
     public function deleteEvent($id)
     {
         $b = $this->conectDB()->prepare("delete from events where id=?");
@@ -79,8 +77,6 @@ class ClassEvents extends ModelConect
         $b->execute();
     }
 
-
-    // Novo código
 
     // Criando usuário de Login
     public function createUser($id_user, $name_user, $name, $password)
@@ -127,23 +123,5 @@ class ClassEvents extends ModelConect
         }
     }
 
-    // public function getEventsByIdAtividade()
-    // {
-    //     session_start();
-    //     $id_atividade = $_SESSION['id_atividade'];
-    //     $b = $this->conectDB()->prepare("delete from events where id_atividade=$id_atividade");
-    //     $b->execute();
-    //     $f = $b->fetchAll(\PDO::FETCH_ASSOC);
-
-
-    
-    //     return json_encode($f, true);
-        
-    // }
-    
     
 }
-
-// $b = $this->conectDB()->prepare("delete from events where id_atividade=$id_atividade");
-// $b->bindParam(1, $id, \PDO::PARAM_INT);
-// $b->execute();

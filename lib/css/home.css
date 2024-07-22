@@ -40,11 +40,6 @@ nav.menuLateral.expandir{
     cursor: pointer;
 }
 
-div.number-days{
-    display: flex;
-    
-}
-
 ul{
     height: 100%;
     list-style-type: none;

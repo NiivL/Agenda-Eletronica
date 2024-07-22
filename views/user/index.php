@@ -1,14 +1,12 @@
 <?php
 require_once('../login/verificarLogin.php');
 include("../../config/config.php"); ?>
-
 <!-- <?php
-$objEvents = new \Classes\ClassEvents();
-$events = $objEvents->getEventsById($_SESSION['id_user']);
 $date = new \DateTime($events['start']);
-
 ?> -->
 <?php include(DIRREQ . "Calendario/lib/html/header.php") ?>
+
+
 <nav class="menuLateral">
     <div class="btn-expandir">
         <i class="bi bi-list-task" id="btn-expandir"></i>
@@ -22,13 +20,13 @@ $date = new \DateTime($events['start']);
             </a>
         </li>
         <li class="item-menu">
-            <a href="#">
+            <a href="./index.php">
                 <span class="icon"><i class="bi bi-calendar-event"></i></span>
                 <span class="txt-link">Agenda</span>
             </a>
         </li>
         <li class="item-menu">
-            <a href="#">
+            <a href="atividades.php">
                 <span class="icon"><i class="bi bi-scooter"></i></span>
                 <span class="txt-link">Atividades</span>
             </a>
@@ -60,7 +58,6 @@ $date = new \DateTime($events['start']);
     <div class="calendarUser"></div>
     <div class="btn_AddEDelete">
         <button class="btn-showform" onclick="Mudarestado('divForm')"><i class="bi bi-file-earmark-plus"></i></button>
-        <!-- <button class="btn-showform" onclick="Mudarestado('formEditOrRemove')"><i class="bi bi-book"></i></i></button> -->
     </div>
 </div> <!-- Calendário e botões de adicionar/deletar eventos -->
 

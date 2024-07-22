@@ -7,6 +7,53 @@ $events = $objEvents->getEventsById($_GET['id']);
 $date = new \DateTime($events['start']);
 ?>
 
+
+<nav class="menuLateral">
+    <div class="btn-expandir">
+        <i class="bi bi-list-task" id="btn-expandir"></i>
+    </div>
+
+    <ul class="listaDeBotoes">
+        <li class="item-menu ativo">
+            <a href="#">
+                <span class="icon"><i class="bi bi-house"></i></span>
+                <span class="txt-link">Home</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="./index.php">
+                <span class="icon"><i class="bi bi-calendar-event"></i></span>
+                <span class="txt-link">Agenda</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="atividades.php">
+                <span class="icon"><i class="bi bi-scooter"></i></span>
+                <span class="txt-link">Atividades</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+                <span class="icon"><i class="bi bi-gear"></i></span>
+                <span class="txt-link">Configurações</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="#">
+                <span class="icon"><i class="bi bi-person-circle"></i></span>
+                <span class="txt-link">Conta</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="/Calendario/views/login/logoff.php">
+                <span class="icon"><i class="bi bi-escape"></i></span>
+                <span class="txt-link">Sair</span>
+            </a>
+        </li>
+    </ul>
+
+</nav> <!-- Menu lateral -->
+
 <div class="container">
     <div class="contentEdit">
         <div class="gif-caderno">

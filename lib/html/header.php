@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php echo DIRPAGE.'Calendario/lib/css/telaLogin.css'; ?>">
     <link rel="stylesheet" href="<?php echo DIRPAGE.'Calendario/lib/css/formAdd.css'; ?>">
     <link rel="stylesheet" href="<?php echo DIRPAGE.'Calendario/lib/css/pageEdit.css'; ?>">
+    <link rel="stylesheet" href="<?php echo DIRPAGE.'Calendario/lib/css/atividades.css'; ?>">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
