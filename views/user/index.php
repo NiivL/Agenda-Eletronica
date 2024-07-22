@@ -53,15 +53,12 @@ $date = new \DateTime($events['start']);
 
 </nav> <!-- Menu lateral -->
 
-
 <div class="flex">
     <div class="calendarUser"></div>
     <div class="btn_AddEDelete">
         <button class="btn-showform" onclick="Mudarestado('divForm')"><i class="bi bi-file-earmark-plus"></i></button>
     </div>
 </div> <!-- Calendário e botões de adicionar/deletar eventos -->
-
-<!-- Código novo -->
 
 <div id="divForm" style="display: none;">
     <form class="formAdd" method="POST" name="formAdd" id="formAdd" action="<?php echo DIRPAGE . '/Calendario/controllers/ControllerAdd.php'; ?>">

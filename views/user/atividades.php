@@ -68,9 +68,6 @@ $events = json_decode($objEvents->getEvents(), true); ?>
                     '<a id="delete" href="../user/editar.php?id=' . $event['id'] . '"><i class="bi bi-trash"></i></a>' .
                     '</div>';
             }; ?>
-
-
-
         </div>
     </div>
 </section> <!-- lista de atividades -->
