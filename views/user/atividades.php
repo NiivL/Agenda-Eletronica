@@ -11,7 +11,7 @@ $events = json_decode($objEvents->getEvents(), true); ?>
 
     <ul class="listaDeBotoes">
         <li class="item-menu ativo">
-            <a href="#">
+            <a href="./home.php">
                 <span class="icon"><i class="bi bi-house"></i></span>
                 <span class="txt-link">Home</span>
             </a>
@@ -61,12 +61,12 @@ $events = json_decode($objEvents->getEvents(), true); ?>
         <div class="atividades">
             <?php foreach ($events as $event) {
 
-                echo    '<div class="atividade">' .
-                    '<p> Atividade: ' . $event['title'] . '</p>' .
-                    '<p> Descrição: ' . $event['description'] . '</p>' .
-                    '<p> Data: ' . $event['start'] . '</p>' .
+                echo    '<li class="atividade">' .
+                    '<ul> Atividade: ' . $event['title'] . '</ul>' .
+                    '<ul> Descrição: ' . $event['description'] . '</ul>' .
+                    '<ul> Data: ' . $event['start'] . '</ul>' .
                     '<a id="delete" href="../user/editar.php?id=' . $event['id'] . '"><i class="bi bi-trash"></i></a>' .
-                    '</div>';
+                    '</li>';
             }; ?>
         </div>
     </div>

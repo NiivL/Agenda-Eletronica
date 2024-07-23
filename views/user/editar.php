@@ -15,7 +15,7 @@ $date = new \DateTime($events['start']);
 
     <ul class="listaDeBotoes">
         <li class="item-menu ativo">
-            <a href="#">
+            <a href="./home.php">
                 <span class="icon"><i class="bi bi-house"></i></span>
                 <span class="txt-link">Home</span>
             </a>

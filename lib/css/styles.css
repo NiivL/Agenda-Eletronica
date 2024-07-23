@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Outfit',Arial, sans-serif;
+    text-decoration: none;
 
 }
 :root {
@@ -144,7 +145,7 @@ input.btn-cadastrar:hover {
 nav.menuLateral {
     width: 80px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #262626;
     padding: 40px 0 40px 1%;
     box-shadow: 3px 0 0 blueviolet;
 
@@ -241,9 +242,21 @@ img.img-trash{
 .calendarUser button.fc-button-primary,
 .calendarManager button.fc-button-primary {
     color: #fff;
-    /* color: var(#1433c2, #fff); */
     background-color: blueviolet;
     transition: 0.5s;
+}
+.calendarUser button.fc-button-primary:hover{
+    color: #fff;
+    background-color: #262626;
+}
+
+.calendarUser button.fc-button-primary:active{
+    color: #fff;
+    background-color: #262626;
+}
+
+.fc-event-main, .fc-event-title-container{
+    background-color: #262626;
 }
 
 .fc-col-header-cell-cushion{
@@ -391,11 +404,11 @@ div.atividades {
     margin-top: 20px;
 }
 
-div.atividade p{
+li.atividade ul{
     color: black;
 }
 
-div.atividade {
+li.atividade {
     font-size: 16px;
     display: flex;
     gap: 10px;
@@ -477,3 +490,91 @@ button.btn-showform:hover{
 /* ------------------------------------------------- */
 
 
+/* Tela inicial (HOME) */
+
+div.homeContent {
+    background-image: url(../../img/Background-roxo-1536x768.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div.homeContainer {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 75%;
+    height: 100vh;
+}
+
+h1.logo {
+    color: #262626;
+}
+
+h1.logo i {
+    font-size: 48px;
+    color: #262626;
+}
+
+h1.homeTitle {
+    font-size: 68px;
+    text-align: center;
+}
+
+p.homeParagrafo {
+    /* color: black; */
+    text-align: center;
+    font-size: 25px;
+}
+
+.homeParagrafo span {
+    color: #262626;
+}
+
+a.btnComecar {
+    margin-top: 50px;
+    background-color: #262626;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.btnComecar:hover {
+    background-color: white;
+    color: black;
+}
+
+a.btnComecar i {
+    color: white;
+    transition: 0.5s;
+    padding-left: 10px;
+    position: relative;
+    animation: mover 1.5s ease infinite;
+}
+@keyframes mover {
+        0% {
+            padding-left: 0px;
+        }
+        50%{
+            padding-left: 10px;
+        }
+        100% {
+            padding-left: 0px;
+        }
+    }
+
+a.btnComecar i:hover {
+    color: black;
+}
+/* ------------------------------------------------- */
